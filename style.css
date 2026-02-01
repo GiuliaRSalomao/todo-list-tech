@@ -1,0 +1,84 @@
+/* Fundo e Centralização da Página */
+body {
+    background-color: #0f172a; /* Azul marinho tech */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Principal */
+.container {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+h2 {
+    margin-top: 0;
+    color: #38bdf8; /* Azul claro */
+}
+
+/* Grupo de Entrada (Input + Botão) */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1; /* Faz o input ocupar o espaço disponível */
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #334155;
+    background-color: #0f172a;
+    color: white;
+    outline: none;
+}
+
+#btnPrincipal {
+    padding: 12px;
+    background-color: #4ade80; /* Verde menta */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1a1a1a; /* Letras escuras */
+}
+
+/* A LISTA NA VERTICAL */
+ul {
+    list-style: none; /* Remove as bolinhas */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* FORÇA A VERTICAL */
+    gap: 12px; /* Espaço entre os botões */
+}
+
+/* ESTILO DOS BOTÕES QUE SURGEM */
+.botao-novo {
+    width: 100%; /* Faz o botão ocupar a largura toda da lista */
+    background-color: #c084fc; /* Roxo vibrante */
+    color: #1a1a1a; /* Letras escuras */
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #9333ea; /* Efeito 3D */
+    transition: transform 0.1s;
+}
+
+.botao-novo:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
